@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+    crossorigin="anonymous"></script>
+
+  <script src="https://kit.fontawesome.com/d869277af2.js" crossorigin="anonymous"></script>
+
+  <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap"
+      rel="stylesheet">
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap"
+      rel="stylesheet">
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet"
+      href="/dropdown-19/dropdown-19/fonts/icomoon/style.css">
+
+    <link rel="stylesheet"
+      href="/dropdown-19/dropdown-19/css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+      href="/dropdown-19/dropdown-19/css/bootstrap.min.css">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="/dropdown-19/dropdown-19/css/style.css">
+
+  <link href="/asset/css/style.css" rel="stylesheet">
+  
+  <script>
+    var example = ['Your Business', 'and ', 'Your Jobs',];
+
+    textSequence(0);
+    function textSequence(i) {
+
+      if (example.length > i) {
+        setTimeout(function () {
+          document.getElementById("sequence").innerHTML = example[i];
+          textSequence(++i);
+        }, 1000);      // 1 second (in milliseconds)
+
+      } else if (example.length == i) {     // Loop
+        textSequence(0);
+      }
+
+    }
+  </script>
+
+</head>
+
+<body>
+  <div class="container-fluid blue-container navbar-header">
+    <nav class="navbar navbar-expand-sm navbar-dark navbar-header">
+      <a class="navbar-brand text-dark" href="#">Nebo technologies</a>
+
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link text-center" href="/asset/index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+           <a href="/asset/service.html">
+            <div class="dropdown custom-dropdown my-2">
+              <a href="/asset/service.html" data-toggle="dropdown" class="dropdown-link"
+                aria-haspopup="true" aria-expanded="true">
+                Services <span class="icon-keyboard_arrow_down arrow"></span>
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <div class="mega-menu d-flex">
+
+                  <div>
+                    <ul class="list-unstyled border-primary">
+                      <li><a href="/asset/service.html"> Service</a></li>
+                      <li><a href="#"> Cybersecurity</a></li>
+                      <li><a href="#">Cloud Hosting
+                        </a></li>
+                      <li><a href="#">ERP </a></li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <ul class="list-unstyled border-warning">
+                      <li><a href="#"> Seamless IT Support
+                        </a></li>
+                      <li><a href="#"> Mobile App and Web Development
+                        </a></li>
+                      <li><a href="#"> Advanced Analytics & DW/BI
+                        </a></li>
+                      <li><a href="#"> Big Data And AI Service
+                        </a></li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <ul class="list-unstyled border-danger">
+                      <li><a href="#">Outsourcing (Nearshore Development
+                          Services)
+                        </a></li>
+                      <li><a href="#"> Workday Services
+                        </a></li>
+                      <li><a href="#"> Staffing Services
+                        </a></li>
+                      <li><a href="#"> BPO Services
+                        </a></li>
+                      <li><a href="#"> SAP enterprise solutions
+                        </a></li>
+                      <li><a href="#">Executive Search
+                        </a></li>
+                    </ul>
+                  </div>
+
+                </div>
+
+            </div>
+
+          </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-center "
+              href="/asset/aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center "
+              href="/asset/careers.html">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center "
+              href="/asset/contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center text-black-50" href="#"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center text-black-50" href="#"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center text-black-50"
+              href="/asset/register.html"><button
+                class="btn btn-top btn-primary btn-sm"><b>Register</b></button></a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+
+
+    <div class="container-sm white-container shadow-lg p-3 mb-3 bg-body rounded">
+
+      <div class="row">
+
+        <div class="col-lg-6" style="align-items: center;">
+          <h1 class="header-text">
+            <p class="phosphorus font-family">Nebo Technologies</p>
+            Helping You To
+            Manage <span id="sequence"></span>
+          </h1>
+        </div>
+
+        <div class="col-lg-6">
+          <center>
+            <img class="vector-1 my-5 img" src="/New folder/Nebo Logo/kia ux course.png">
+          </center>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-6">
+          <center>
+            <p class="d-grid gap-1 m-5"><Button class="btn btn-lg btn-p">Start Register</Button></p>
+          </center>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  </div>
+
+  <div class="container-sm aboutuscontainer bg-body rounded pb-5 ">
+    <div class="row">
+
+      <div class="col-sm-6">
+        <center>
+          <img src="/New folder/Nebo Logo/LOGO.png" alt="company_logo" class="company_logo">
+        </center>
+      </div>
+
+      <div class="col-sm-6">
+        <center>
+          <h1 class="about-us">About Us</h1>
+        </center>
+      </div>
+    </div>
+
+    <div class="row about-us-para">
+      <div class="col-12">
+        <b>We</b> recognize that the corporate world is continuously changing,
+        thus we provide effective solutions that are adapted to your industry’s
+        needs while keeping in mind the changing dynamics of the global market.
+        We work hard to make sure that our expertise is beneficial to you and that
+        it helps you achieve your business objectives.
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container-sm offercontainer  bg-body rounded pb-5">
+    <div class="row">
+      <center><b>
+          <h1>What we Offer</h1>
+        </b></center>
+
+      <center>
+        <div class="btn-group basic-radio-toogle-buton" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+          <label class="btn btn-outline-dark" for="btnradio1">Effective</label>
+
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+          <label class="btn btn-outline-dark" for="btnradio2">Efficient</label>
+
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+          <label class="btn btn-outline-dark" for="btnradio3">Cost Productivity</label>
+        </div>
+      </center>
+
+
+    
+
+        <div class="col-sm-6 offercontainerimg">
+          <img src="/New folder/Nebo Logo/Group 951.jpg" width="50%">
+        </div>
+     
+       <div class="col-sm-6 offercontainerpara">
+        <b>We</b> exist to provide you with cutting-edge solutions and
+        services that are not only effective but also cost-effective,
+        advanced, and easily adaptable to your specific business needs.
+        We endeavour to make it easier for you to increase
+        production while cutting costs.
+       </div>
+
+    
+    </div>
+  </div>
+
+
+  <div class="container-fluid  emailcontainer
+   ">
+    <div class="container-sm">
+    <div class="row">
+
+      <div class="col-sm-6 email-heading">
+        <b>
+          <h1 class="text-white">Request a list of headings</h1>
+        </b>
+        <br>
+        <p class="text-white">Please enter your email address to receive quotation , the project prototype <br>will be emailed to you.</p>
+        <div class="form-floating">
+          <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+          <label for="email">Email</label>
+        </div>
+      </div>
+
+      <div class="col-sm-6 email-img">
+        <img src="/New folder/Nebo Logo/Group 956.png" width="50%"> 
+      </div>
+
+
+    </div>
+  </div>
+  </div>
+
+  <center>
+    <div class="container-sm  bg-body rounded card-container my-5">
+      <div class="row">
+
+        <div class="col-sm-4">
+          <div class="card" style="width: 15rem;">
+            <img src="/New folder/Nebo Logo/Group 955.png" class="card-img-top" alt="">
+             <div class="card-body">
+              <h5 class="card-title">ERP</h5>
+               <p class="card-text">We help you plan your resources
+                in the best of ways via the finest
+                of our ERP services..
+               </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card" style="width: 15rem;">
+            <img src="/New folder/Nebo Logo/Group 949.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Advanced Analytics & WD/BI</h5>
+              <p class="card-text">We offer the best of business
+                intelligence and data warehousing
+                solutions along with a combination
+                of adapt data analysis.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card" style="width: 15rem;">
+            <img src="/New folder\Nebo Logo\Group 948.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Seamless IT Support</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+   
+
+      <div class="row">
+
+        <div class="col-sm-4">
+          <div class="card" style="width: 15rem;">
+            <img src="/New folder\Nebo Logo\Group 947.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Cloud Hosting</h5>
+              <p class="card-text">At Nebo Technologies we
+                ensure that you get the
+                best of cloud hosting services
+                that are effective and economical.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card" style="width: 15rem;">
+            <img src="/New folder\Nebo Logo\Group 946.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Cyber Security</h5>
+                  <p class="card-text">We provide state-of-the-art
+                    cybersecurity solutions to keep
+                    your valued data safe from
+                    any malicious attempts.
+                 </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-4">
+          <div class="card" style="width: 15rem;">
+            <img src="/New folder\Nebo Logo\Group 945.jpg" class="card-img-top" alt="">
+
+            <div class="card-body">
+                <h5 class="card-title"> Mobile App and Web Development</h5>
+                 <p class="card-text">We ensure that you are
+                   well prepared in terms of web
+                   and mobile solutions to combat
+                   any business obstacle
+                 </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    
+
+
+      <div class="row">
+
+        <div class="col-sm-4">
+          <div class="card" style="width: 15rem;">
+            <img src="/New folder\Nebo Logo\Group 944.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Outsourcing (Nearshore Development Services)</h5>
+
+              <p class="card-text">
+                We understand that running a
+                business takes a lot of working hands
+                and hence we provide the best fit
+                for your outsourcing requirements
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card" style="width: 15rem;">
+            <img src="/New folder\Nebo Logo\Group 943.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Workday Services</h5>
+              <p class="card-text">Our services are particularly
+                designed to support the education,
+                training, and deployment of
+                your teams in the best of ways.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card" style="width: 15rem;">
+            <img src="/New folder\Nebo Logo\Group 942.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Staffing Services</h5>
+              <p class="card-text">We help you create a team
+                of ambitious and strategy
+                oriented individuals to
+                best benefit your business.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+   
+
+
+      <div class="row">
+
+        <div class="col-sm-4">
+          <div class="card" style="width: 15rem;">
+            <img src="/New folder\Nebo Logo\Group 941.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">BPO Services</h5>
+              <p class="card-text">Our consistent business
+                services help you create
+                wide and varied connections
+                and a first rate customer base.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card" style="width: 15rem;">
+            <img src="/New folder\Nebo Logo\Group 940.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">SAP enterprise solutions</h5>
+              <p class="card-text">We work to help you realize
+                the full potential of your
+                business via reducing
+                complexities and mastering the abilities</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card" style="width: 15rem;">
+            <img src="/New folder\Nebo Logo\Group 939.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Executive Search</h5>
+              <p class="card-text">Nebo Technologies caters to your
+                individual executive recruitment
+                needs and provides you with
+                the most excellent of solutions.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    
+
+
+
+      <div class="row">
+
+        <div class="col-sm-4"></div>
+
+        <div class="col-sm-4">
+          <div class="card" style="width: 15em;">
+            <img src="/New folder\Nebo Logo\Group 954.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Big Data And AI Services</h5>
+              <p class="card-text">Take full advantages of big data
+                in finance solutions — gain access to real-time analytics, immediately
+                act on insights, and win more business through unbeatable intelligence.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4"></div>
+
+      </div>
+    </div>
+
+  </center>
+
+  <script src="/dropdown-19/dropdown-19/js/jquery-3.3.1.min.js"></script>
+    <script src="/dropdown-19/dropdown-19/js/popper.min.js"></script>
+    <script src="/dropdown-19/dropdown-19/js/bootstrap.min.js"></script>
+    <script src="/dropdown-19/dropdown-19/js/owl.carousel.min.js"></script>
+    <script src="/dropdown-19/dropdown-19/js/main.js"></script>
+
+</body>
+
+</html>
