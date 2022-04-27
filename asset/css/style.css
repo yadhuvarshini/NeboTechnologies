@@ -16,6 +16,11 @@ body {
     color: #112c3a;
 }
 
+.text-link {
+    border-bottom: #112c3a;
+    border-radius:2px ;
+}
+
 .white-container {
     background-color: white;
     height: 690px;
@@ -171,11 +176,13 @@ body {
 } 
 
 .card-container img {
-  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-    
+}
+
+img .col-sm-6{
+    width: 90%;
 }
 
 /*card container*/
@@ -310,6 +317,7 @@ body {
         align-items: center;
     }
 
+
 }
 
 @media (max-width: 980px) {
@@ -342,11 +350,19 @@ body {
     .offercontainerimg {
         display: none;
    }
-
+   .cybersecurity-img2 {
+    display: none;
+    }
    .offercontainerpara {
        margin-top: 20px;
    }
    .custom-dropdown {
+       display: none;
+   }
+   body {
+       background-color: white;
+   }
+   .email-img {
        display: none;
    }
 
