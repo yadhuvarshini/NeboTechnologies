@@ -41,11 +41,52 @@
     <link rel="stylesheet"
       href="/dropdown-19/dropdown-19/css/bootstrap.min.css">
 
-    <!-- Style -->
-    <link rel="stylesheet" href="/dropdown-19/dropdown-19/css/style.css">
+      <!--animateonscroll.css-->
+      <link href="/asset/animateonscroll.css" rel="stylesheet">
+      
+      <!-- Style -->
+      <link rel="stylesheet" href="/dropdown-19/dropdown-19/css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-  <link href="/asset/css/style.css" rel="stylesheet">
+      <link href="/asset/css/style.css" rel="stylesheet">
+
+      <!--greensock-->
+      <script src="./scripts/CustomEase.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha384-..."crossorigin="anonymous"></script>
+      
+
+
+  <style>
+  @media (min-width: 1000px) {
+ .text-typing p  {
+  white-space:nowrap;
+  overflow:hidden;
+  animation:typing 5s steps(22,end) forwards,
+            blink 1s infinite;
+}
+.header-text {
+  width: 76%;
+  height: auto;
+}
+@keyframes typing {
+  0% { width:0% }
+  100% { width:100% }
+}
+@keyframes blink {
+  0%,100% {
+    border-right:2px solid transparent;
+  }
+  50% {
+    border-right:2px solid #222;
+  }
+}
+}
+    </style>
   
+  <script>   
+    AOS.init(); 
+ </script>
+
 </head>
 
 <body>
@@ -68,9 +109,9 @@
           <li class="nav-item">
            <a href="/asset/service.html">
             <div class="dropdown custom-dropdown my-2 text-center">
-              <a href="/asset/service.html" data-toggle="dropdown" class="dropdown-link"
+              <a href="/asset/service.html" data-toggle="dropdown" class="dropdown-link dropdown-head"
                 aria-haspopup="true" aria-expanded="true">
-                Services <span class="icon-keyboard_arrow_down arrow"></span>
+                Services <span class="icon-keyboard_arrow_down service-arrow arrow"></span>
               </a>
 
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -147,17 +188,23 @@
       <div class="row">
 
         <div class="col-lg-6" style="align-items: center;">
-          <h1 class="header-text">
-            <p class="phosphorus font-family">Nebo Technologies</p>
-            Helping You To
-           Accomplish your Business
+          <h1 class="header-text font font-family phosphorus text-typing">           
+          
+            <center>
+            Nebo Technologies<br>
+            Helping You To <br>
+            <p>Accomplish your Business</p>
+          </center>
+           
           </h1>
         </div>
 
         <div class="col-lg-6">
+          
           <center>
-            <img class="vector-1 my-5 img" src="/New folder/Nebo Logo/kia ux course.png">
+            <img  class="vector-1 mt-5 mb-3 img animate__animated animate__fadeInDown " src="/New folder/Nebo Logo/kia ux course.png">
           </center>
+       
         </div>
 
       </div>
@@ -166,7 +213,7 @@
 
        
           <center>
-            <p class="d-grid gap-1 m-5"><Button class="btn btn-lg btn-p">Start Register</Button></p>
+            <a href="/asset/register.html"><p class="d-grid gap-1 m-0"><Button class="btn btn-lg btn-p btn btn-outline">Start Register</Button></p></a>
           </center>
        
 
@@ -177,12 +224,12 @@
 
   </div>
 
-  <div class="container-sm aboutuscontainer bg-body rounded pb-5 ">
+  <div class="container-sm aboutuscontainer bg-body rounded pb-5   ">
     <div class="row">
 
       <div class="col-sm-6">
         <center>
-          <img src="/New folder/Nebo Logo/LOGO.png" alt="company_logo" class="company_logo">
+          <span class="animate__animated animate__fadeInLeft animate__slow animate__delay-1s"><img src="/New folder/Nebo Logo/LOGO.png" alt="company_logo" class="company_logo"></span>
         </center>
       </div>
 
@@ -195,11 +242,13 @@
 
     <div class="row about-us-para">
       <div class="col-12">
+        
         <b>We</b> recognize that the corporate world is continuously changing,
         thus we provide effective solutions that are adapted to your industry’s
         needs while keeping in mind the changing dynamics of the global market.
         We work hard to make sure that our expertise is beneficial to you and that
         it helps you achieve your business objectives.
+     
       </div>
     </div>
 
@@ -211,21 +260,7 @@
           <h1>What we Offer</h1>
         </b></center>
 
-      <center>
-        <div class="btn-group basic-radio-toogle-buton" role="group" aria-label="Basic radio toggle button group">
-          <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-          <label class="btn btn-outline-dark" for="btnradio1">Effective</label>
-
-          <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-          <label class="btn btn-outline-dark" for="btnradio2">Efficient</label>
-
-          <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-          <label class="btn btn-outline-dark" for="btnradio3">Cost Productivity</label>
-        </div>
-      </center>
-
-
-    
+     
 
         <div class="col-sm-6 offercontainerimg">
           <img src="/New folder/Nebo Logo/Group 951.jpg" width="50%">
@@ -244,8 +279,7 @@
   </div>
 
 
-  <div class="container-fluid  emailcontainer
-   ">
+  <div class="container-fluid emailcontainer">
     <div class="container-sm">
     <div class="row">
 
@@ -278,7 +312,7 @@
 
         <div class="col-sm-4">
           <div class="card" style="width: 240px;">
-            <img src="/New folder/Nebo Logo/Group 955.png" class="card-img-top" alt="">
+            <a href="/asset/erp.html"><img src="/New folder/Nebo Logo/Group 955.png" class="card-img-top" alt=""></a>
              <div class="card-body">
               <h5 class="card-title">ERP</h5>
                <p class="card-text">We help you plan your resources
@@ -291,20 +325,20 @@
 
         <div class="col-sm-4">
           <div class="card" style="width: 240px;">
-            <img src="/New folder/Nebo Logo/Group 949.jpg" class="card-img-top" alt="">
+            <a href="/asset/advanced analytics.html"><img src="/New folder/Nebo Logo/Group 949.jpg" class="card-img-top" alt=""></a>
             <div class="card-body">
               <h5 class="card-title">Advanced Analytics & WD/BI</h5>
               <p class="card-text">We offer the best of business
                 intelligence and data warehousing
                 solutions along with a combination
-                of adapt data analysis.</p>
+                of adapt data analysis</p>
             </div>
           </div>
         </div>
 
         <div class="col-sm-4">
           <div class="card" style="width: 240px;">
-            <img src="/New folder\Nebo Logo\Group 948.jpg" class="card-img-top" alt="">
+            <a href="/asset/seamlessitsupoort.html"><img src="/New folder\Nebo Logo\Group 948.jpg" class="card-img-top" alt=""></a>
             <div class="card-body">
               <h5 class="card-title">Seamless IT Support</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
@@ -320,7 +354,7 @@
 
         <div class="col-sm-4">
           <div class="card" style="width: 240px;">
-            <img src="/New folder\Nebo Logo\Group 947.jpg" class="card-img-top" alt="">
+            <a href="/asset/cloudhosting.html"><img src="/New folder\Nebo Logo\Group 947.jpg" class="card-img-top" alt=""></a>
             <div class="card-body">
               <h5 class="card-title">Cloud Hosting</h5>
               <p class="card-text">At Nebo Technologies we
@@ -333,7 +367,7 @@
 
         <div class="col-sm-4">
           <div class="card" style="width: 240px;">
-            <img src="/New folder\Nebo Logo\Group 946.jpg" class="card-img-top" alt="">
+            <a href="/asset/cybersecurity.html"><img src="/New folder\Nebo Logo\Group 946.jpg" class="card-img-top" alt=""></a>
               <div class="card-body">
                 <h5 class="card-title">Cyber Security</h5>
                   <p class="card-text">We provide state-of-the-art
@@ -348,7 +382,7 @@
 
         <div class="col-sm-4">
           <div class="card" style="width: 240px;">
-            <img src="/New folder\Nebo Logo\Group 945.jpg" class="card-img-top" alt="">
+            <a href="/asset/mobileappplatform.html"><img src="/New folder\Nebo Logo\Group 945.jpg" class="card-img-top" alt=""></a>
 
             <div class="card-body">
                 <h5 class="card-title"> Mobile App and Web Development</h5>
@@ -370,7 +404,7 @@
 
         <div class="col-sm-4">
           <div class="card" style="width: 240px;">
-            <img src="/New folder\Nebo Logo\Group 944.jpg" class="card-img-top" alt="">
+            <a href="/asset/outsourcing.html"><img src="/New folder\Nebo Logo\Group 944.jpg" class="card-img-top" alt=""></a>
             <div class="card-body">
               <h5 class="card-title">Outsourcing (Nearshore Development Services)</h5>
 
@@ -387,7 +421,7 @@
 
         <div class="col-sm-4">
           <div class="card" style="width: 240px;">
-            <img src="/New folder\Nebo Logo\Group 943.jpg" class="card-img-top" alt="">
+            <a href="/asset/workdayservice.html"><img src="/New folder\Nebo Logo\Group 943.jpg" class="card-img-top" alt=""></a>
             <div class="card-body">
               <h5 class="card-title">Workday Services</h5>
               <p class="card-text">Our services are particularly
@@ -400,52 +434,7 @@
 
         <div class="col-sm-4">
           <div class="card" style="width: 240px;">
-            <img src="/New folder\Nebo Logo\Group 942.jpg" class="card-img-top" alt="">
-            <div class="card-body">
-              <h5 class="card-title">Staffing Services</h5>
-              <p class="card-text">We help you create a team
-                of ambitious and strategy
-                oriented individuals to
-                best benefit your business.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-   
-
-
-      <div class="row">
-
-        <div class="col-sm-4">
-          <div class="card" style="width: 240px;">
-            <img src="/New folder\Nebo Logo\Group 941.jpg" class="card-img-top" alt="">
-            <div class="card-body">
-              <h5 class="card-title">BPO Services</h5>
-              <p class="card-text">Our consistent business
-                services help you create
-                wide and varied connections
-                and a first rate customer base.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-4">
-          <div class="card" style="width: 240px;">
-            <img src="/New folder\Nebo Logo\Group 940.jpg" class="card-img-top" alt="">
-            <div class="card-body">
-              <h5 class="card-title">SAP enterprise solutions</h5>
-              <p class="card-text">We work to help you realize
-                the full potential of your
-                business via reducing
-                complexities and mastering the abilities</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-4">
-          <div class="card" style="width: 240px;">
-            <img src="/New folder\Nebo Logo\Group 939.jpg" class="card-img-top" alt="">
+            <a href="/asset/executive search.html"><img src="/New folder\Nebo Logo\Group 939.jpg" class="card-img-top" alt=""></a>
             <div class="card-body">
               <h5 class="card-title">Executive Search</h5>
               <p class="card-text">Nebo Technologies caters to your
@@ -456,18 +445,16 @@
           </div>
         </div>
 
+
       </div>
-    
-
-
-
+   
       <div class="row">
 
         <div class="col-sm-4"></div>
 
         <div class="col-sm-4">
           <div class="card" style="width: 240px;">
-            <img src="/New folder\Nebo Logo\Group 954.png" class="card-img-top" alt="">
+            <a href="/asset/bigdataandaiservice.html"><img src="/New folder\Nebo Logo\Group 954.png" class="card-img-top" alt=""></a>
             <div class="card-body">
               <h5 class="card-title">Big Data And AI Services</h5>
               <p class="card-text">Take full advantages of big data
@@ -489,6 +476,10 @@
     <script src="/dropdown-19/dropdown-19/js/bootstrap.min.js"></script>
     <script src="/dropdown-19/dropdown-19/js/owl.carousel.min.js"></script>
     <script src="/dropdown-19/dropdown-19/js/main.js"></script>
+
+    <!--animateonscroll.js-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
 </body>
 
