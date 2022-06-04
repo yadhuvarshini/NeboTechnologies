@@ -40,22 +40,26 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet"
       href="/dropdown-19/dropdown-19/css/bootstrap.min.css">
-
-      <!--animateonscroll.css-->
-      <link href="/asset/animateonscroll.css" rel="stylesheet">
       
       <!-- Style -->
       <link rel="stylesheet" href="/dropdown-19/dropdown-19/css/style.css">
+
+      <!--Animate.css-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
+      <!--Stylesheet - local -->
       <link href="/asset/css/style.css" rel="stylesheet">
 
-      <!--greensock-->
-      <script src="./scripts/CustomEase.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha384-..."crossorigin="anonymous"></script>
+      <!--js local-->
+      <link rel="script" src="/asset/js/script.js">
+
+      <link rel="stylesheet" href="http://cdn.jsdelivr.net/animatecss/3.1.0/animate.css">
+
+      <!--AOS-->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
       
-
-
   <style>
   @media (min-width: 1000px) {
  .text-typing p  {
@@ -83,9 +87,10 @@
 }
     </style>
   
-  <script>   
-    AOS.init(); 
- </script>
+  <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 
 </head>
 
@@ -202,7 +207,7 @@
         <div class="col-lg-6">
           
           <center>
-            <img  class="vector-1 mt-5 mb-3 img animate__animated animate__fadeInDown " src="/New folder/Nebo Logo/kia ux course.png">
+            <img  class="vector-1 mt-5 mb-3 img bounceInDown animated" src="/New folder/Nebo Logo/kia ux course.png">
           </center>
        
         </div>
@@ -213,7 +218,8 @@
 
        
           <center>
-            <a href="/asset/register.html"><p class="d-grid gap-1 m-0"><Button class="btn btn-lg btn-p btn btn-outline">Start Register</Button></p></a>
+            <a href="/asset/register.html">
+              <Button class="btn btn-lg btn-p btn btn-outline slideInLeft animated" >Start Register</Button></a>
           </center>
        
 
@@ -227,20 +233,20 @@
   <div class="container-sm aboutuscontainer bg-body rounded pb-5   ">
     <div class="row">
 
-      <div class="col-sm-6">
-        <center>
-          <span class="animate__animated animate__fadeInLeft animate__slow animate__delay-1s"><img src="/New folder/Nebo Logo/LOGO.png" alt="company_logo" class="company_logo"></span>
-        </center>
+      <div class="col-sm-6 logo-1" data-aos="fade-right" data-aos-duration="2000">
+
+         <span><img src="/New folder/Nebo Logo/LOGO.png" alt="company_logo" class="company_logo" data-aos="fade-right" data-aos-duration="2000"></span>
+
       </div>
 
-      <div class="col-sm-6">
+      <div class="col-sm-6 about" data-aos="fade-down" data-aos-duration="2000">
         <center>
-          <h1 class="about-us">About Us</h1>
+          <h1 class="about-us" >About Us</h1>
         </center>
       </div>
     </div>
 
-    <div class="row about-us-para">
+    <div class="row about-us-para" data-aos="fade-up" data-aos-duration="2000">
       <div class="col-12">
         
         <b>We</b> recognize that the corporate world is continuously changing,
@@ -254,19 +260,22 @@
 
   </div>
 
-  <div class="container-sm offercontainer  bg-body rounded pb-5">
+  <div class="container-sm offercontainer bg-body rounded pb-5">
     <div class="row">
       <center><b>
-          <h1>What we Offer</h1>
+          <h1 class="underline" data-aos="zoom-in-up" data-aos-duration="2000">What we Offer</h1>
         </b></center>
 
      
 
-        <div class="col-sm-6 offercontainerimg">
+        <div class="col-sm-6 offercontainerimg" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
           <img src="/New folder/Nebo Logo/Group 951.jpg" width="50%">
         </div>
      
-       <div class="col-sm-6 offercontainerpara">
+       <div class="col-sm-6 offercontainerpara" data-aos="fade-up"
+       data-aos-anchor-placement="bottom-center">
         <b>We</b> exist to provide you with cutting-edge solutions and
         services that are not only effective but also cost-effective,
         advanced, and easily adaptable to your specific business needs.
@@ -279,11 +288,11 @@
   </div>
 
 
-  <div class="container-fluid emailcontainer">
+  <div class="container-fluid emailcontainer animate__animated animate__fadeInDown">
     <div class="container-sm">
     <div class="row">
 
-      <div class="col-sm-6 email-heading">
+      <div class="col-sm-6 email-heading" data-aos="fade-down" data-aos-duration="2000">
         <b>
           <h1 class="text-white">Request a list of headings</h1>
         </b>
@@ -295,7 +304,7 @@
         </div>
       </div>
 
-      <div class="col-sm-6 email-img">
+      <div class="col-sm-6 email-img" data-aos="fade-left" data-aos-duration="2000">
         <center>
         <img src="/New folder/Nebo Logo/Group 956.png" width="50%" class="email-img"> 
       </center>
@@ -307,8 +316,8 @@
   </div>
 
   <center>
-    <div class="container-sm  bg-body rounded card-container my-5">
-      <div class="row">
+    <div class="container-sm  bg-body rounded card-container my-5" >
+      <div class="row" data-aos="fade-down" data-aos-duration="2000">
 
         <div class="col-sm-4">
           <div class="card" style="width: 240px;">
@@ -350,7 +359,7 @@
       </div>
    
 
-      <div class="row">
+      <div class="row" data-aos="fade-down" data-aos-duration="2000">
 
         <div class="col-sm-4">
           <div class="card" style="width: 240px;">
@@ -400,7 +409,7 @@
     
 
 
-      <div class="row">
+      <div class="row" data-aos="fade-down" data-aos-duration="2000">
 
         <div class="col-sm-4">
           <div class="card" style="width: 240px;">
@@ -448,7 +457,7 @@
 
       </div>
    
-      <div class="row">
+      <div class="row" data-aos="fade-down" data-aos-duration="2000">
 
         <div class="col-sm-4"></div>
 
@@ -471,15 +480,19 @@
 
   </center>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
   <script src="/dropdown-19/dropdown-19/js/jquery-3.3.1.min.js"></script>
     <script src="/dropdown-19/dropdown-19/js/popper.min.js"></script>
     <script src="/dropdown-19/dropdown-19/js/bootstrap.min.js"></script>
     <script src="/dropdown-19/dropdown-19/js/owl.carousel.min.js"></script>
     <script src="/dropdown-19/dropdown-19/js/main.js"></script>
 
-    <!--animateonscroll.js-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+  
 
 </body>
 

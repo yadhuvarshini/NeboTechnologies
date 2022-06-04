@@ -44,6 +44,10 @@
 
     <!-- Style -->
     <link rel="stylesheet" href="/dropdown-19/dropdown-19/css/style.css">
+
+     <!--AOS-->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
       
       </head>
 
@@ -137,9 +141,9 @@
                   <a class="nav-link text-center text-black-50" href="#"></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-center text-black-50"
+                  <!--<a class="nav-link text-center text-black-50"
                     href="/asset/register.html"><button
-                      class="btn btn-top btn-primary btn-sm"><b>Register</b></button></a>
+                      class="btn btn-top btn-primary btn-sm"><b>Register</b></button></a>->-->
                 </li>
               </ul>
             </div>
@@ -148,10 +152,10 @@
 
         <div class="contact-us-container container">
             <div class="container contact-form">
-                <div class="contact-image">
+               <!-- <div class="contact-image rounded-circle">
                     <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact" />
-                </div>
-                <div class="row contact-form-1">
+                </div>-->
+                <div class="row contact-form-1" data-aos="zoom-in-right" data-aos-duration="2000">
                   <center>
 
                     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScmwtFrkRQFQxA6GN9hsE4_kOi8knLLEu4MCyLpB5ViiLRQnQ/viewform?embedded=true" width="100%" height="1603"  frameborder="0" marginheight="0" marginwidth="0"> </iframe>
@@ -161,6 +165,12 @@
             </div>
         </div>
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 
     <script src="/dropdown-19/dropdown-19/js/jquery-3.3.1.min.js"></script>
     <script src="/dropdown-19/dropdown-19/js/popper.min.js"></script>
